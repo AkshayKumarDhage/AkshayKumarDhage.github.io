@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,700&display=swap');
+
+body {
+	overflow-x: hidden;
+	font-family: 'catamaran', sans-serif;
+}
+
+/*-- Navigation --*/
+.navbar {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-brand img {
+	height: 2rem;
+	margin-left: 20px;
+}
+
+.navbar-nav li{
+	padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+	padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: red;
+}
+
+/*-- Landing page --*/
+.home-inner {
+	background-image: url(images/img17.jpg);
+}
+
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+	color: white;
+}
+
+.caption h1 {
+	font-size: 3.8rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+}
+
+.caption h3 {
+	font-style: 2rem;
+	text-shadow: .1rem .1rem .5rem black;
+}
+
+.btn-lg {
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.3rem;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+#education {
+	background: black;
+	color: white;
+}
+
+#skills {
+	background: black;
+	color: white;
+}
+
+#interests {
+	background: black;
+	color: white;
+}
+
+#projects {
+	background: black;
+	color: white;
+}
+
+#achivements {
+	background: black;
+	color: white;
+}
+
+#certification {
+	background: black;
+	color: white;
+}
+
+
+
+
+/*-- Projects card --*/
+.card-container {
+	width: 1000px;
+	background: black; /*-- card spacing --*/
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-container .card {
+	position: relative;
+	background: black;  /*-- card background --*/
+}
+
+.card-container .card .face {
+	width: 300px;
+	height: 200px;
+	transition: 0.5px;
+}
+
+.card-container .card .face.face1 {
+	position: relative;
+	background: #c3073f;  /*-- card color --*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(100px);
+}
+
+.card-container .card:hover .face.face1 {
+	background: #ff0057;
+	transform: translateY(0);
+}
+
+.card-container .card .face.face1 .content {
+	opacity: 1;	/*-- card image opacity --*/
+	transition: 0.5%;
+}
+
+.card-container .card:hover .face.face1 .content {
+	opacity: 1;
+}
+
+.card-container .card .face.face1 .content img {
+	max-width: 100px;
+}
+
+.card-container .card .face.face1 .content h3 {
+	margin: 10px 0 0;
+	padding: 0;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.card-container .card .face.face2 {
+	position: relative;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+	transform: translateY(-100px);
+}
+
+.card-container .card .face.face2 .content p {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+.card-container .card .face.face2 .content a {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	padding: 5px;
+	border: 1px solid white;
+	color: white;
+}
+
+.card-container .card:hover .face.face2 {
+	transform: translateY(0);
+}
+
+.card-container .card .face.face2 .content a:hover {
+	background: #c3073f;
+	color: #fff;
+}
+
+.media {
+	display: inline;
+}
+
+#contact {
+	background: black;
+	color: white;
+	align-content: center;
+}
+
+.contact {
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+.contact ul {
+	display: flex;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	padding-top: 80px;
+}
+
+.contact ul li {
+	list-style: none;
+}
+
+.contact ul li a {
+	width: 50px;
+	height: 50px;
+	background: #c3073f;
+	text-align: center;
+	line-height: 56px;
+	font-size: 30px;
+	margin: 0 10px;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
+.contact ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+.contact ul li a:hover {
+	color: white;
+	display: block;
+}
+
+#sticky-footer {
+	background: #19181a!important;
+}
