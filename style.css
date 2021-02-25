@@ -103,7 +103,7 @@ body {
 
 /*-- Projects card --*/
 .card-container {
-	width: 1000px;
+	width: 500px;
 	background: black; /*-- card spacing --*/
 	position: relative;
 	display: flex;
