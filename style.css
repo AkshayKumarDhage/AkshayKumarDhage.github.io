@@ -103,9 +103,9 @@ body {
 
 /*-- Projects card --*/
 .card-container {
-	width: 500px;
+	width: 1000px;
 	background: black; /*-- card spacing --*/
-	position: relative;
+	position: absolute;
 	display: flex;
 	justify-content: space-between;
 }
